@@ -22,6 +22,7 @@
 
 #include <stdio.h>
 #include <json.h>
+#include <bits.h>
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <string.h>

@@ -17,7 +17,7 @@ $(BIN): $(CFILES:.c=.o)
 	$(CC) $(CFLAGS) -c $^
 
 clean:
-	rm -rf *.o *~ .*.swp *.core *.log *.gch
+	rm -rf *.o *~ .*.swp *.core *.log *.gch heimdallr
 
 distclean: clean
 	rm -rf $(BIN)
