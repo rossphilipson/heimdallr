@@ -155,6 +155,7 @@ json_parse_quirk(json_object *jquirk, pci_device_quirk *quirks_list)
     }
 
     printf("Quirk - vendor: %s subvendor: %s\n", vendor, subvendor);
+    printf("Quirk - device %s subdevice: %s\n", device, subdevice);
 
     pci_device_field *config_space_fields = json_parse_quirk_config_space_fields(jquirk);
 
