@@ -216,6 +216,7 @@ parse_json_file(const char *json_file)
     if (fread(json_str, st.st_size, sizeof (char), f) <= 0)
     {
         fprintf(stderr, "fread for json file failed\n");
+        fclose(f);
         return NULL;
     }
 
