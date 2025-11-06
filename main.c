@@ -151,8 +151,7 @@ scan_all_pci_devices(pci_device_quirk *quirks,
 static void
 usage(void)
 {
-    /* FIXME */
-    printf("wrong usage\n");
+    printf("heidallr <config-file>\n");
 }
 
 int
