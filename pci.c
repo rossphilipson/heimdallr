@@ -22,6 +22,8 @@
 
 #include "pci.h"
 
+static pci_dev_infos* last = NULL;
+
 pci_device_field*
 pci_device_field_add(pci_device_field *head,
                      char *reg, char *size, char *mask)
@@ -83,6 +85,9 @@ pci_dev_infos_add(pci_dev_infos *head, unsigned int domain,
     new->dev = dev;
     new->func = func;
     new->next = NULL;
+
+    /* Set last for no reason... */
+    last = new;
 
     if (NULL == head)
         return new;
